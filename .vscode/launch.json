@@ -2,6 +2,24 @@
     "configurations": [
         {
             "type": "java",
+            "name": "RestApiApplication",
+            "request": "launch",
+            "mainClass": "xyz.ruhshan.tracingspringboot3.restapi.RestApiApplication",
+            "projectName": "rest-api"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-RestApiApplication<rest-api>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "xyz.ruhshan.tracingspringboot3.restapi.RestApiApplication",
+            "projectName": "rest-api",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=33701 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=rest-api"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-RestApiApplication<rest-api>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
