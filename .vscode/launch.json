@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-RestApiApplication<rest-api>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "xyz.ruhshan.restapi.RestApiApplication",
+            "projectName": "rest-api",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
