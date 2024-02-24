@@ -3,6 +3,8 @@ spring:
     application:
         name: @project.artifactId@
 
+rest-api-2:
+    url: http://localhost:8081
 #logging:
 #    pattern:
 #        level: '%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]'
