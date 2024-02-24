@@ -3,7 +3,7 @@ spring:
     application:
         name: @project.artifactId@
 
-logging:
-    pattern:
-        level: '%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]'
-
+#logging:
+#    pattern:
+#        level: '%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]'
+#
