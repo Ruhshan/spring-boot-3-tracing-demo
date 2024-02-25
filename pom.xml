@@ -13,5 +13,6 @@
         <module>common</module>
         <module>rest-api</module>
 		<module>rest-api-2</module>
+		<module>kafka-consumer</module>
     </modules>
 </project>
