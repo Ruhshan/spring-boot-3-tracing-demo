@@ -10,8 +10,8 @@ import xyz.ruhshan.tracingspringboot3.common.dto.*;
 @Component
 @Slf4j
 public class MessageConsumer {
-    @KafkaListener(topics = "topic-message", groupId = "message-consumer-group")
-    public void consumeMessage(Message message, @Headers Map<String, Object> allHeader) {
+    @KafkaListener(topics = "topic-message", groupId = "message-consumer-group", containerFactory = "messageContainerFactory")
+    public void consumeMessage(@Payload Message message, @Headers Map<String, Object> allHeader) {
         log.info("Consumed kafka message {}", message);
     }
 }
