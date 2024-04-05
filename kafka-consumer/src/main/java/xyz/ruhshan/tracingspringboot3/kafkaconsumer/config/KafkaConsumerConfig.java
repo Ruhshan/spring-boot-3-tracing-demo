@@ -24,10 +24,6 @@ public class KafkaConsumerConfig {
     @Value(value = "${spring.kafka.bootstrap-servers}")
     private String bootstrapServers;
 
-    @Bean
-    public RecordMessageConverter converter() {
-        return new JsonMessageConverter();
-    }
 
     private Map<String, Object> consumerConfigs() {
         final Map<String, Object> props = new HashMap<>();
@@ -52,7 +48,6 @@ public class KafkaConsumerConfig {
             new ConcurrentKafkaListenerContainerFactory<>();
 
         factory.getContainerProperties().setObservationEnabled(true);
-        //factory.getContainerProperties().setMicrometerEnabled(true);
 
         factory.setConsumerFactory(messageConsumerFactory());
 
