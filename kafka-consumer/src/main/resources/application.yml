@@ -2,7 +2,12 @@ spring:
   application:
     name: @project.artifactId@
   kafka:
-    bootstrap-servers: localhost:29092
+    bootstrap-servers: localhost:9092
+    consumer:
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: xyz.ruhshan.tracingspringboot3.common.dto
+
 
 server:
   port: 8082
