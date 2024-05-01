@@ -2,7 +2,9 @@ spring:
   application:
     name: @project.artifactId@
   kafka:
-    bootstrap-servers: localhost:29092
+    bootstrap-servers: localhost:9092
+#    producer:
+#      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
 
 server:
   port: 8081

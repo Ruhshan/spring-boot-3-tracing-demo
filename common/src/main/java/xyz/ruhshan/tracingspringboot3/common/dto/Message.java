@@ -9,6 +9,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Message implements Serializable {
-    private String header;
+    private String title;
     private String content;
 }
